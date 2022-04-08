@@ -35,9 +35,30 @@ while (skaicius !==5) {
 }
 
 console.log('uzd 6');
+console.log('-------------- ');
 console.log('uzd 7');
+console.log('-------------- ');
 console.log('uzd 8');
+console.log('-------------- ');
+
 console.log('uzd 9');
+
+function pirminisSkaicius(a) {
+    if (typeof a !== 'number')
+        return 'not a number'
+    if (a === 2)
+        return 'pirminis'
+    for (let i = 2; i < a; i++) {
+        if (a % i === 0) {
+            return 'nepirminis'
+    }else{
+        return 'pirminis'
+    }        
+    }
+}
+console.log(pirminisSkaicius(2));
+
+
 console.log('uzd 10');
 const numeris = [1, 1, 1, 2, 2, 2, 3, 3, 3, 3];
 function telefonoNumeris(n) {

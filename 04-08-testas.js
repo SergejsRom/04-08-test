@@ -56,7 +56,7 @@ function pirminisSkaicius(a) {
     }        
     }
 }
-console.log(pirminisSkaicius(2));
+console.log(pirminisSkaicius(5));
 
 
 console.log('uzd 10');

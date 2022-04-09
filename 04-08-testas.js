@@ -64,7 +64,17 @@ console.log('uzd 7');
         let atsitiktines = raides[Math.floor(Math.random() * raides.length)]
         masyvasRaides.push(atsitiktines)
     }
+    console.log('raidziu masyve:', masyvasRaides.length);
     console.log(masyvasRaides);
+
+    let kiekis = masyvasRaides;
+    let suskaiciotaAtskirai = {A: 0, B: 0, C: 0, D: 0};
+
+    for (let elem of kiekis) {
+	    suskaiciotaAtskirai[elem]++;
+    }
+
+    console.log(suskaiciotaAtskirai);
   
 
 console.log('-------------- ');

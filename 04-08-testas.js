@@ -35,7 +35,27 @@ while (skaicius !==5) {
 }
 
 console.log('uzd 6');
-console.log('-------------- ');
+let masyvas = [];
+let ilgis = (Math.floor(Math.random() * (30 - 20 + 1)) + 20)
+console.log(ilgis);
+for (let i = 0; i < ilgis; i++) {
+    let skaiciai = (Math.floor(Math.random() * (30 - 10 + 1)) + 10)
+    masyvas.push(skaiciai);
+    
+}
+console.log(masyvas)
+let big = 0;
+for (let i = 0; i < masyvas.length; i++) {
+    if (big < masyvas[i] ) {
+        big = masyvas[i];
+    }
+}
+console.log(big);
+console.log('-----------------------');
+
+
+
+
 console.log('uzd 7');
 console.log('-------------- ');
 console.log('uzd 8');
@@ -56,7 +76,7 @@ function pirminisSkaicius(a) {
     }        
     }
 }
-console.log(pirminisSkaicius(5));
+console.log(pirminisSkaicius(8));
 
 
 console.log('uzd 10');
@@ -66,9 +86,4 @@ function telefonoNumeris(n) {
 }
 const pakeistas = telefonoNumeris(numeris);
 console.log(pakeistas);
-
-
-
-
-
 

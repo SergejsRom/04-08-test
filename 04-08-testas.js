@@ -57,6 +57,16 @@ console.log('-----------------------');
 
 
 console.log('uzd 7');
+//7. Sugeneruokite masyvą, kurio reikšmės atsitiktinės raidės A, B, C ir D, o ilgis 100. Suskaičiuokite kiek yra kiekvienos raidės. (7 taškai)
+    let masyvasRaides = [];
+    let raides = 'ABCD' 
+    for (let i = 1; i <= 100; i++) {
+        let atsitiktines = raides[Math.floor(Math.random() * raides.length)]
+        masyvasRaides.push(atsitiktines)
+    }
+    console.log(masyvasRaides);
+  
+
 console.log('-------------- ');
 console.log('uzd 8');
 console.log('-------------- ');

@@ -79,6 +79,20 @@ console.log('uzd 7');
 
 console.log('-------------- ');
 console.log('uzd 8');
+function arLygine(a, b) {
+    if (typeof a === 'number' && Array.isArray(b) || Array.isArray(a) && typeof b === 'number') {
+        return 'negali būti vienas skaičius, kitas masyvas'
+    }
+
+    if ((a+b) % 2 === 0 || (a.length + b.length) % 2 === 0) {
+        return a.length + b.length || a+b;
+    }
+    if ((a+b) % 2 !== 0 || (a.length) + (b.length) % 2 !== 0) {
+        return 'nelygine suma';
+    }
+    
+}
+console.log(arLygine ([2, 5, 7], 2));
 console.log('-------------- ');
 
 console.log('uzd 9');
